@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One|Quicksand:400,700');
+
+html{
+		background: url(../images/cosmos.jpg)no-repeat center center fixed;
+		background-size: cover;
+	}
+
+		
+		.cube {
+		    position: relative;
+		    width: 200px;
+		    transform-style: preserve-3d;
+		 	 margin:150px auto;
+		 }
+		.cube div {
+		    position: absolute;
+		    width: 200px;
+		    height: 200px;
+		    text-align: center;
+		    line-height: 200px;
+		    opacity: 0.5;
+
+		}
+		div img{
+			display: block;
+			width: 100%;
+			/* min-height: 100%; */
+			image-rendering: auto;
+			box-shadow: 0 0 10px #fff;
+			/* image-rendering: crisp-edges;
+			image-rendering: pixelated; */
+			}		
+		.back {
+			    transform: translateZ(-100px) rotateY(180deg);
+			    background: #fafafa;
+			    transition-duration:0.8s;
+
+			}
+			.right {
+			    transform: rotateY(-270deg) translateX(100px);
+			    transform-origin: top right;
+			    background: #fafafa;
+			    transition-duration:0.8s;
+			}
+		
+			.right:hover,.left:hover,.front:hover,.back:hover{
+				opacity: 1;
+			}
+			.left {
+			    transform: rotateY(270deg) translateX(-100px);
+			    transform-origin: center left;
+			    background: #fafafa;
+			    transition-duration:0.8s;
+			}
+			.top {
+			    transform: rotateX(-90deg) translateY(-100px);
+			    transform-origin: top center;
+			    background: #fafafa;
+			}
+			.bottom {
+			    transform: rotateX(90deg) translateY(100px);
+			    transform-origin: bottom center;
+			}
+			.front {
+			    transform: translateZ(100px);
+			    background: #fafafa;
+			    transition-duration:0.8s;
+			}
+				@keyframes spin {
+			    from { transform: rotateY(0);}/*tester également rotateX(0) ensemble*/
+			    to { transform: rotateY(360deg);}
+
+			}
+
+			.cube{
+			    animation: spin 5s infinite linear;/*ease-in-out*/
+			    cursor: pointer;
+			}
+			.cube-stop{
+				animation-play-state: paused;
+			}

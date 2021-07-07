@@ -1,0 +1,223 @@
+	body{
+			font:16px 'Quicksand',sans-serif;
+			font-size-adjust:0.5;
+			margin:0;
+		}
+		a{
+			text-decoration: none;
+			color:#222;
+		}
+		*{
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		figure{
+			margin:0;
+			padding:10px;
+			
+			
+
+		}
+		figcaption{
+			display: inline-block;
+			width: 77%;
+		
+			vertical-align: middle;
+		}
+		.picture{
+			display: inline-block;
+			border-radius:50%;
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+			border: solid 8px transparent;
+			vertical-align: middle;
+			border-left-color: rgba(41, 128, 185,1.0);
+			border-top-color: rgba(41, 128, 185,1.0);
+			border-bottom-color: rgba(41, 128, 185,1.0);
+
+		}
+		.picture img{
+			display:block;
+			width: 100%;
+
+		
+		}
+		li>a{
+			display: block;
+			font-size: 1.2rem;
+			text-transform: normal;
+			-webkit-transition-duration: 0.2s;
+			-moz-transition-duration: 0.2s;
+			-ms-transition-duration: 0.2s;
+			-o-transition-duration: 0.2s;
+			transition-duration: 0.2s;
+		}
+		ul{
+			position:fixed;
+			z-index: 1;
+			width: 100%;
+			left:0;
+			top:0;
+			margin:0;
+			line-height: 60px;
+			overflow: hidden;
+			background: rgba(255,255,255,0.9);
+			padding: 0;
+		}
+		li{
+			float: left;
+			width: 180px;
+			text-align: center;
+			list-style-type: none;
+			border-bottom:solid 3px transparent;
+			transition: border 0.8s ease-in-out;
+
+
+		}
+		li:hover{
+			border-bottom:solid 3px  #2196f3;
+			
+		}
+		li>a:hover{
+			
+			color:#fff;
+			transition: 0.5s ease-in-out;		}
+		.active{
+			background: rgba(52, 152, 219,1.0);
+			color: #fff;
+		}
+	
+		.wrap {
+		    perspective: 800px;
+		    perspective-origin: 50% 100px;
+		    margin-top: 100px;
+		 
+
+		}
+		section{
+			width: 1000px;
+			margin:0 auto 10px;
+			background: rgba(255,255,255,1);
+			box-shadow: 0 0 5px #fafafa;
+			border-radius: 4px;
+			overflow: hidden;
+		}
+		section h2{
+			font-family: 'Patua One';
+			margin:0;
+			padding: 10px 0 0 10px;
+			color: rgba(41, 128, 185,1.0);
+		}
+		section p{
+			margin:0;
+			padding: 10px;
+			line-height: 22px;
+			text-align: left;
+		}
+		.date{
+			padding:10px;
+			position: static;
+			width: auto;
+			line-height: 25px;
+		}
+		.date>li{
+			float: none;
+			width: auto;
+			text-align: left;
+			list-style-type: none;
+			border-bottom:solid 3px transparent;
+		}
+		.date>li::before{
+			content:'\f00c';
+			margin-right: 5px;
+			color: rgba(52, 152, 219,1.0);
+			font-family: 'FontAwesome';
+		}
+		dd{
+			margin:0;
+		}
+		dl{
+			margin:10px 0;
+			width: 192px;
+			min-height: 100px;
+			display: inline-block;
+			padding:10px;
+			vertical-align: top;
+		}
+		.languages{
+			text-align: center;
+		}
+		dt{
+			font-size: 14px;
+
+		}
+		dd{
+			line-height: 90px;
+			text-align: center;
+			font-family: 'Patua One';
+			font-size: 2.5rem;
+			color: rgba(52, 152, 219,1.0);
+		}
+		.helper{
+			background: rgba(52, 152, 219,1.0);
+			color: #fff;
+		}
+		.helper:first-line{
+			font-size:x-large;
+		}
+		/*mouvement 3d card*/
+		.card-container {
+			  height: 655px;
+			  perspective: 900px;/*600 sans pixel voir le résultat*/
+			  position: relative;
+			  width: 1000px;
+			  margin:0 auto;
+			  background: transparent;
+			  box-shadow: none;
+			  overflow: visible;
+
+
+			}
+			.card{
+			  height: 100%;
+			  position: absolute;
+			  transform-style: preserve-3d;/*Indique que les fils de l'élément ciblé doivent être positionnés dans l'espace tridimensionnel. choisir "flat","preserve-3d*/
+			  transition: all 1s ease-in-out;
+			  width: 100%;
+			  box-shadow: 0 0 10px #fafafa;
+			  border-radius:8px;
+			
+
+			}
+			 .card:hover {
+			 /* transform: rotateY(180deg); */
+			 cursor:pointer;
+						
+						} 
+			 .card-rotate{
+			  transform: rotateY(180deg);
+			  
+			
+			} 
+			.card .side {
+			  backface-visibility: hidden;
+			  height: 100%;
+			  position: absolute;
+			  width: 100%;
+			  background: #fff;
+			  
+			}
+			.card .back {
+			  transform: rotateY(180deg);
+			  background: #fafafa;
+			}
+			img{
+				display: block;
+				width: 100%;
+			}
+			.pictures img{
+				box-shadow: none;
+			}
+	
