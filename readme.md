@@ -15,6 +15,9 @@
 	<link rel="stylesheet" href="css/responsive.css" media="screen" type="text/css">
 </head>
 <body>
+    <!-- content -->
+</body>
+</html>
 ```
 ## Exemple code css<sub>3</sub>
 
