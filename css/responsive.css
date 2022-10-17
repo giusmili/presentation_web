@@ -9,7 +9,7 @@
 	li{
 		float:none;
 		width: auto;
-		margin-bottom:1px;
+		margin-bottom:.1rem;
 		background: #FAFAFA;
 		border:0;
 
@@ -19,7 +19,7 @@
 	}
 	li>a{
 		text-align: left;
-		padding-left: 10px;
+		padding-left: 1rem;
 
 	}
 	li a:hover{
@@ -32,7 +32,7 @@
 	}
 	section{
 		width: auto;
-		margin-bottom: 1px;
+		margin-bottom: .1rem;
 		border-radius:0;
 		background: rgba(255,255,255,0.9);
 	}
@@ -48,7 +48,7 @@
 		width: auto;
 	}
 	dl{
-		border-bottom:solid 1px #ccc;
+		border-bottom:solid .1rem #ccc;
 		display: block;
 		width: auto;
 	}
@@ -62,11 +62,9 @@
 		width: auto;
 		height: 200px;
 	}
-	.side{
-
-	}
+	
 	.wrap{
-		margin-top: 1px;
+		margin-top: .1rem;
 	}
 	.helper{
 		text-align: justify;
@@ -74,7 +72,7 @@
 	section>.date{
 		background: rgba(255,255,255,0.9);
 		
-		padding:10px 0;
+		padding:1rem 0;
 		margin:5px 0 0 0;
 	}
 	.date li{
@@ -99,7 +97,7 @@
 	}
 
 }
-@media screen and (min-width:360px) and (max-width: 640px){
+@media screen and (min-width:36rem) and (max-width: 64rem){
 		body{
 		padding:0 1%;
 	}
@@ -110,7 +108,7 @@
 	li{
 		float:none;
 		width: auto;
-		margin-bottom:1px;
+		margin-bottom:.1rem;
 		background: #FAFAFA;
 		border:0;
 
@@ -120,7 +118,7 @@
 	}
 	li>a{
 		text-align: left;
-		padding-left: 10px;
+		padding-left: 1rem;
 
 	}
 	li a:hover{
@@ -133,7 +131,7 @@
 	}
 	section{
 		width: auto;
-		margin-bottom: 1px;
+		margin-bottom: .1rem;
 		border-radius:0;
 		background: rgba(255,255,255,0.9);
 	}
@@ -149,7 +147,7 @@
 		width: auto;
 	}
 	dl{
-		border-bottom:solid 1px #ccc;
+		border-bottom:solid .1rem #ccc;
 		display: block;
 		width: auto;
 	}
@@ -161,13 +159,13 @@
 	}
 	.card-container{
 		width: auto;
-		height: 200px;
+		height: 20rem;
 	}
 	.side{
 
 	}
 	.wrap{
-		margin-top: 1px;
+		margin-top: .1rem;
 	}
 	.helper{
 		text-align: justify;
@@ -175,12 +173,12 @@
 	section .date{
 		background: rgba(255,255,255,0.9);
 		
-		padding:10px 0;
+		padding:1rem 0;
 		margin:5px 0 0 0;
 	}
 	.date li{
 		border-bottom:0;
-		padding-left: 5px;
+		padding-left: .5rem;
 		font-size: 3vw;
 		background: transparent;
 	}

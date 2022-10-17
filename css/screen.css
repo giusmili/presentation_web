@@ -1,7 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One|Quicksand:400,700');
+
+html{
+	font-size: 62.5%;
+	background: url(../images/cosmos_cover.jpg)no-repeat fixed center center / cover;
+		
+	}
+	
 	body{
-			font:16px 'Quicksand',sans-serif;
-			font-size-adjust:0.5;
+			font:1.6rem 'Quicksand', sans-serif;
+			line-height: 1.6;
+			letter-spacing: 0.1rem;
 			margin:0;
+		}
+			/* scroll bars */
+		*{
+			/* For FF and non-webkit browsers */
+			scrollbar-width: thin;
+			scrollbar-color: #000 #FFF;
+		}
+		*::-webkit-scrollbar {
+			width: .2rem;
+		}
+		*::-webkit-scrollbar-thumb {
+			background-color: #222;
+			outline: .1rem solid #333;
 		}
 		a{
 			text-decoration: none;
@@ -14,7 +36,7 @@
 		}
 		figure{
 			margin:0;
-			padding:10px;
+			padding:1.0rem;
 			
 			
 
@@ -31,7 +53,7 @@
 			width: 200px;
 			height: 200px;
 			overflow: hidden;
-			border: solid 8px transparent;
+			border: solid .8rem transparent;
 			vertical-align: middle;
 			border-left-color: rgba(41, 128, 185,1.0);
 			border-top-color: rgba(41, 128, 185,1.0);
@@ -46,7 +68,8 @@
 		}
 		li>a{
 			display: block;
-			font-size: 1.2rem;
+			font-size: inherit;
+			text-transform: uppercase;
 			text-transform: normal;
 			-webkit-transition-duration: 0.2s;
 			-moz-transition-duration: 0.2s;
@@ -71,13 +94,13 @@
 			width: 180px;
 			text-align: center;
 			list-style-type: none;
-			border-bottom:solid 3px transparent;
+			border-bottom:solid .3rem transparent;
 			transition: border 0.8s ease-in-out;
 
 
 		}
 		li:hover{
-			border-bottom:solid 3px  #2196f3;
+			border-bottom:solid .3rem  #2196f3;
 			
 		}
 		li>a:hover{
@@ -90,44 +113,44 @@
 		}
 	
 		.wrap {
-		    perspective: 800px;
-		    perspective-origin: 50% 100px;
-		    margin-top: 100px;
+		    perspective: 80rem;
+		    perspective-origin: 50% 10.0rem;
+		    margin-top: 10.0rem;
 		 
 
 		}
 		section{
-			width: 1000px;
-			margin:0 auto 10px;
+			width: 100rem;
+			margin:0 auto 1.0rem;
 			background: rgba(255,255,255,1);
-			box-shadow: 0 0 5px #fafafa;
-			border-radius: 4px;
+			box-shadow: 0 0 1.0rem #222;
+			border-radius: .4rem;
 			overflow: hidden;
 		}
 		section h2{
 			font-family: 'Patua One';
 			margin:0;
-			padding: 10px 0 0 10px;
+			padding: 1.0rem 0 0 1.0rem;
 			color: rgba(41, 128, 185,1.0);
 		}
 		section p{
 			margin:0;
-			padding: 10px;
-			line-height: 22px;
+			padding: 1.0rem;
+			line-height: 2.2rem;
 			text-align: left;
 		}
 		.date{
-			padding:10px;
+			padding:1.0rem;
 			position: static;
 			width: auto;
-			line-height: 25px;
+			line-height: 2.5rem;
 		}
 		.date>li{
 			float: none;
 			width: auto;
 			text-align: left;
 			list-style-type: none;
-			border-bottom:solid 3px transparent;
+			border-bottom:solid .3rem transparent;
 		}
 		.date>li::before{
 			content:'\f00c';
@@ -139,22 +162,22 @@
 			margin:0;
 		}
 		dl{
-			margin:10px 0;
+			margin:1.0rem 0;
 			width: 192px;
-			min-height: 100px;
+			min-height: 10.0rem;
 			display: inline-block;
-			padding:10px;
+			padding:1.0rem;
 			vertical-align: top;
 		}
 		.languages{
 			text-align: center;
 		}
 		dt{
-			font-size: 14px;
+			font-size: 1.4rem;
 
 		}
 		dd{
-			line-height: 90px;
+			line-height: 9rem;
 			text-align: center;
 			font-family: 'Patua One';
 			font-size: 2.5rem;
@@ -169,10 +192,10 @@
 		}
 		/*mouvement 3d card*/
 		.card-container {
-			  height: 655px;
-			  perspective: 900px;/*600 sans pixel voir le résultat*/
+			  height: 65.5rem;
+			  perspective: 90rem;/*600 sans pixel voir le résultat*/
 			  position: relative;
-			  width: 1000px;
+			  width: 100rem;
 			  margin:0 auto;
 			  background: transparent;
 			  box-shadow: none;
@@ -186,8 +209,8 @@
 			  transform-style: preserve-3d;/*Indique que les fils de l'élément ciblé doivent être positionnés dans l'espace tridimensionnel. choisir "flat","preserve-3d*/
 			  transition: all 1s ease-in-out;
 			  width: 100%;
-			  box-shadow: 0 0 10px #fafafa;
-			  border-radius:8px;
+			  box-shadow: 0 0 1.0rem #222;
+			  border-radius:.8rem;
 			
 
 			}
