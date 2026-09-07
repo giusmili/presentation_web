@@ -9,7 +9,6 @@ Cours interactif retraçant les débuts d'Internet, l'histoire du World Wide Web
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
 
-🔗 [Voir la démo en ligne](https://giusmili.github.io/presentation_web/)
 
 ## Démarrage
 
