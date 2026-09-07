@@ -17,7 +17,7 @@ npm install
 npm run dev
 ```
 
-Puis ouvrir [http://localhost:3000](http://localhost:3000).
+Puis ouvrir : ```http://localhost:3000```
 
 > Le site original en HTML/CSS/jQuery pur (sans framework) reste disponible dans le dossier voisin `1_a-presentation-web-histoire-original`.
 
