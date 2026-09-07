@@ -1,0 +1,15 @@
+const isGithubPages = process.env.GITHUB_PAGES === "true";
+const basePath = isGithubPages ? "/presentation_web" : "";
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",
+  basePath,
+  assetPrefix: basePath,
+  images: {
+    unoptimized: true,
+  },
+  agentRules: false,
+};
+
+export default nextConfig;

@@ -1,0 +1,28 @@
+export default function CardA() {
+  return (
+    <section>
+      <h2>&lt;/&gt;Arpanet 1969</h2>
+      <p>
+        ARPANET ou Arpanet (acronyme anglais de « Advanced Research Projects
+        Agency Network », souvent typographié « ARPAnet ») est le premier
+        réseau à transfert de paquets développé aux États-Unis par la DARPA.
+        Le projet fut lancé en 1962, mais ARPANET ne vit le jour qu&apos;en
+        1969. Sa première démonstration officielle date d&apos;octobre 1972.
+      </p>
+      <figure>
+        <div className="picture" role="figure">
+          <img src="/images/kan_gray.jpeg" alt="Gray and Kahn" />
+        </div>
+
+        <figcaption>
+          <p>
+            Vinton « Vint » Gray Cerf, né le 23 juin 1943 à New Haven,
+            Connecticut, États-Unis, est un ingénieur américain, chercheur et
+            co-inventeur avec Bob Kahn du protocole TCP/IP. Il est considéré
+            comme l&apos;un des pères fondateurs d&apos;Internet.
+          </p>
+        </figcaption>
+      </figure>
+    </section>
+  );
+}

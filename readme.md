@@ -1,4 +1,12 @@
 # Cours initial html &amp; css
+
+## Lancer en local (version Next.js)
+```bash
+npm install
+npm run dev
+```
+Puis ouvrir http://localhost:3000. Le site original en HTML/CSS/jQuery pur reste disponible dans le dossier voisin `1_a-presentation-web-histoire-original`.
+
 ## Exemple code html<sup>5</sup>
 ```html
 <!doctype html>
