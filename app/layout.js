@@ -7,6 +7,20 @@ export const metadata = {
   manifest: "/favicon/site.webmanifest",
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Présentation web",
+  url: "https://giusmili.github.io/presentation_web/",
+  inLanguage: "fr",
+  description:
+    "Cours de présentation du web : débuts d'Internet (Arpanet), histoire du World Wide Web et du langage HTML5.",
+  publisher: {
+    "@type": "Organization",
+    name: "LGC - R&D",
+  },
+};
+
 export default function RootLayout({ children }) {
   const year = new Date().getFullYear();
 
@@ -18,6 +32,10 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
           crossOrigin="anonymous"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body>
