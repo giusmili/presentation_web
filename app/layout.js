@@ -2,12 +2,37 @@ import "../css/cube.css";
 import "../css/screen.css";
 import "../css/responsive.css";
 
+const SITE_URL = "https://giusmili.github.io/presentation_web/";
+const SITE_DESCRIPTION =
+  "Cours de présentation du web : débuts d'Internet (Arpanet), histoire du World Wide Web et du langage HTML5.";
+
 export const metadata = {
   title: "Présentation web",
+  description: SITE_DESCRIPTION,
   manifest: "/favicon/site.webmanifest",
+  openGraph: {
+    title: "Présentation web",
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    siteName: "Présentation web",
+    locale: "fr_FR",
+    type: "website",
+    images: [
+      {
+        url: `${SITE_URL}images/cosmos_cover.jpg`,
+        width: 1920,
+        height: 1281,
+        alt: "Présentation web",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Présentation web",
+    description: SITE_DESCRIPTION,
+    images: [`${SITE_URL}images/cosmos_cover.jpg`],
+  },
 };
-
-const SITE_URL = "https://giusmili.github.io/presentation_web/";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -18,8 +43,7 @@ const jsonLd = {
       name: "Présentation web",
       url: SITE_URL,
       inLanguage: "fr",
-      description:
-        "Cours de présentation du web : débuts d'Internet (Arpanet), histoire du World Wide Web et du langage HTML5.",
+      description: SITE_DESCRIPTION,
       image: `${SITE_URL}images/cosmos_cover.jpg`,
       datePublished: "2021-07-07",
       dateModified: "2026-09-07",
