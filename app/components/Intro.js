@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { basePath } from "../basePath";
 
 export default function Intro() {
   const [isPaused, setIsPaused] = useState(false);
@@ -13,22 +14,22 @@ export default function Intro() {
         onClick={() => setIsPaused((paused) => !paused)}
       >
         <div className="front">
-          <img src="/images/html5.png" alt="front" />
+          <img src={`${basePath}/images/html5.png`} alt="Logo HTML5" />
         </div>
         <div className="back">
-          <img src="/images/css3.png" alt="back" />
+          <img src={`${basePath}/images/css3.png`} alt="Logo CSS3" />
         </div>
         <div className="top">
-          <img src="/images/node.png" alt="top" />
+          <img src={`${basePath}/images/node.png`} alt="Logo Node.js" />
         </div>
         <div className="bottom">
-          <img src="/images/jquery.png" alt="bottom" />
+          <img src={`${basePath}/images/jquery.png`} alt="Logo jQuery" />
         </div>
         <div className="left">
-          <img src="/images/logo_php.png" alt="left" />
+          <img src={`${basePath}/images/logo_php.png`} alt="Logo PHP" />
         </div>
         <div className="right">
-          <img src="/images/javascript.png" alt="right" />
+          <img src={`${basePath}/images/javascript.png`} alt="Logo JavaScript" />
         </div>
       </div>
     </div>

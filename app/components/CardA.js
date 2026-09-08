@@ -1,3 +1,5 @@
+import { basePath } from "../basePath";
+
 export default function CardA() {
   return (
     <section>
@@ -11,7 +13,7 @@ export default function CardA() {
       </p>
       <figure>
         <div className="picture" role="figure">
-          <img src="/images/kan_gray.jpeg" alt="Gray and Kahn" />
+          <img src={`${basePath}/images/kan_gray.jpeg`} alt="Gray and Kahn" />
         </div>
 
         <figcaption>

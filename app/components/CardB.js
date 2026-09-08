@@ -1,4 +1,6 @@
 import { Fragment } from "react";
+import { basePath } from "../basePath";
+import { CloudIcon, SpinnerIcon, UserIcon, FlaskIcon } from "./Icons";
 
 const DATES = [
   {
@@ -24,7 +26,10 @@ export default function CardB() {
         </p>
         <figure>
           <div className="picture">
-            <img src="/images/Tim-Berners-Lee.jpg" alt="Tim Berners lee" />
+            <img
+              src={`${basePath}/images/Tim-Berners-Lee.jpg`}
+              alt="Tim Berners lee"
+            />
           </div>
 
           <figcaption>
@@ -72,25 +77,25 @@ export default function CardB() {
         <dl>
           <dt>Composants spécifiques</dt>
           <dd>
-            <i className="fa fa-cloud" aria-hidden="true"></i>
+            <CloudIcon aria-hidden="true" />
           </dd>
         </dl>
         <dl>
           <dt>Compatibilité avec les langages</dt>
           <dd>
-            <i className="fa fa-spinner fa-spin" aria-hidden="true"></i>
+            <SpinnerIcon className="spinner" aria-hidden="true" />
           </dd>
         </dl>
         <dl>
           <dt>Centré sur l&apos;utilisateur</dt>
           <dd>
-            <i className="fa fa-user" aria-hidden="true"></i>
+            <UserIcon aria-hidden="true" />
           </dd>
         </dl>
         <dl>
           <dt>Développé en permanance</dt>
           <dd>
-            <i className="fa fa-flask" aria-hidden="true"></i>
+            <FlaskIcon aria-hidden="true" />
           </dd>
         </dl>
         <p className="helper">

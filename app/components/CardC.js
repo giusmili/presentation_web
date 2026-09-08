@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { basePath } from "../basePath";
 
 export default function CardC() {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -24,7 +25,7 @@ export default function CardC() {
             </p>
           </div>
           <div className="pictures">
-            <img src="/images/sublime.png" alt="Sublime-text" />
+            <img src={`${basePath}/images/sublime.jpg`} alt="Sublime-text" />
           </div>
         </div>
         <div className="side back">
@@ -37,7 +38,10 @@ export default function CardC() {
             </p>
           </div>
           <div className="pictures">
-            <img src="/images/visual-studio.png" alt="Visual Studio Code" />
+            <img
+              src={`${basePath}/images/visual-studio.jpg`}
+              alt="Visual Studio Code"
+            />
           </div>
         </div>
       </div>

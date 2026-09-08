@@ -119,6 +119,9 @@ export default function Presentation() {
         ))}
       </ul>
       <main id="info" className={isFading ? "wrap fade-out" : "wrap fade-in"}>
+        <h1 className="sr-only">
+          Présentation web : histoire d&apos;Internet et du HTML5
+        </h1>
         <Content />
       </main>
     </>

@@ -1,13 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-
 html{
 	font-size: 62.5%;
-	background: url(/images/cosmos_cover.jpg)no-repeat fixed center center / cover;
-		
+	background: var(--bg-image) no-repeat fixed center center / cover;
+
 	}
-	
+
+	.sr-only{
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border: 0;
+	}
+
 	body{
-			font:1.6rem 'Montserrat', sans-serif;
+			font: 1.6rem var(--font-montserrat), sans-serif;
 			line-height: 1.6;
 			letter-spacing: 0.1rem;
 			margin:0;
@@ -250,7 +260,7 @@ html{
 			overflow: hidden;
 		}
 		section h2{
-			font-family: 'Montserrat';
+			font-family: var(--font-montserrat), sans-serif;
 			margin:0;
 			padding: 1.0rem 0 0 1.0rem;
 			color: rgba(41, 128, 185,1.0);
@@ -275,10 +285,10 @@ html{
 			border-bottom:solid .3rem transparent;
 		}
 		.date>li::before{
-			content:'\f00c';
+			content:'\2713';
 			margin-right: 5px;
 			color: rgba(52, 152, 219,1.0);
-			font-family: 'FontAwesome';
+			font-weight: bold;
 		}
 		dd{
 			margin:0;
@@ -301,9 +311,15 @@ html{
 		dd{
 			line-height: 9rem;
 			text-align: center;
-			font-family: 'Montserrat';
+			font-family: var(--font-montserrat), sans-serif;
 			font-size: 2.5rem;
 			color: rgba(52, 152, 219,1.0);
+		}
+		.dd-icon{
+			width: 2.5rem;
+			height: 2.5rem;
+			display: inline-block;
+			vertical-align: middle;
 		}
 		.helper{
 			background: rgba(52, 152, 219,1.0);

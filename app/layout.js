@@ -1,15 +1,25 @@
+import { Montserrat } from "next/font/google";
 import "../css/cube.css";
 import "../css/screen.css";
 import "../css/responsive.css";
+import { basePath } from "./basePath";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-montserrat",
+  display: "swap",
+});
 
 const SITE_URL = "https://giusmili.github.io/presentation_web/";
 const SITE_DESCRIPTION =
   "Cours de présentation du web : débuts d'Internet (Arpanet), histoire du World Wide Web et du langage HTML5.";
 
 export const metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Présentation web",
   description: SITE_DESCRIPTION,
-  manifest: "/favicon/site.webmanifest",
+  manifest: `${basePath}/favicon/site.webmanifest`,
   openGraph: {
     title: "Présentation web",
     description: SITE_DESCRIPTION,
@@ -100,14 +110,12 @@ export default function RootLayout({ children }) {
   const year = new Date().getFullYear();
 
   return (
-    <html lang="fr">
+    <html
+      lang="fr"
+      className={montserrat.variable}
+      style={{ "--bg-image": `url(${basePath}/images/cosmos_cover.jpg)` }}
+    >
       <head>
-        <link
-          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-          rel="stylesheet"
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-          crossOrigin="anonymous"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
